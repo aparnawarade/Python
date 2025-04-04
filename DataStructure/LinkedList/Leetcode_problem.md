@@ -1,20 +1,32 @@
 Most of linked list problem can be solved with two pointers 
 E,g 
+
 **Fast and slow pointer **
-Find middle of linked list (middle will be slow if fast moves with double the speed ) LeetCode #876 
-FInd Loop in linked list (traverse till fast==slow) Leetcode #141 | Solution
+Find middle of linked list (middle will be slow if fast moves with double the speed ) 
+**LeetCode #876 ** https://leetcode.com/problems/middle-of-the-linked-list/description/
+
+FInd Loop in linked list (traverse till fast==slow) 
+Leetcode #141 | Solution https://leetcode.com/problems/linked-list-cycle/description/
+
 **Two pointers at a distance**
-Fins Kth node from last (move fast till K and then when fats reaches end ,kth node is slow pointer ) Leetcode #19
-Reverse Linked list (prev , curr, next pointer) Leetcode #206
+Fins Kth node from last (move fast till K and then when fats reaches end ,kth node is slow pointer ) 
+Leetcode #19 https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/ 
+
+Reverse Linked list (prev , curr, next pointer) 
+Leetcode #206 : https://leetcode.com/problems/reverse-linked-list/description/
+
 **Dummy node **
-Meging a linked list (take dummy node and merge to that node baked on value ) Leetcode #21 (dummy node and two pinters at two list )
+Meging a linked list (take dummy node and merge to that node baked on value ) 
+Leetcode #21 (dummy node and two pinters at two list )
+https://leetcode.com/problems/merge-two-sorted-lists/description/
 
 **Pallindrome linked list Leetcode #234**
 Hint: Use fast and slow pointers to find the middle of the linked list, and reverse the second half of the linked list, and compare the values of the nodes in the first half and the reversed second half.
+https://leetcode.com/problems/palindrome-linked-list/description/
 
 **Reorder list (Leetcode #143)**
-
 Hint: Use fast and slow pointers to find the middle of the linked list, reverse the second half of the linked list, and merge the two halves of the linked list together.
+https://leetcode.com/problems/reorder-list/description/
 
 **When to Use fast and slow pointer (Notes)**
 Fast and slow pointers is a technique that is used to find the middle node in a linked list. We initialize two pointers, slow and fast, that start at the head of the linked list. We then iterate until fast reaches the end of the list. During each iteration, the slow pointer advances by one node, while the fast pointer advances by two nodes. When the fast pointer reaches tail of the list, the slow pointer points to the middle node.
@@ -31,8 +43,12 @@ Problem on Dummy node
 
 **Swap Nodes in Pairs Leetcode #24 | Solution**
 Hint: Start by figuring out the pointers you need to manipulate in order to swap two nodes in the middle of a linked list, then think about how using a dummy node can simplify your solution.
+https://www.leetcode.com/problems/swap-nodes-in-pairs
+
 **Partition List Leetcode #86**
 Hint: Use two dummy nodes!
+https://www.leetcode.com/problems/partition-list
+
 The function partition_list takes an integer x as a parameter and modifies the current linked list in place according to the specified criteria. If the linked list is empty (i.e., head is null), the function should return immediately without making any changes.
 Example 1:
 Input:
