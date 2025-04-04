@@ -6,13 +6,15 @@ Find middle of linked list (middle will be slow if fast moves with double the sp
 **LeetCode #876 ** https://leetcode.com/problems/middle-of-the-linked-list/description/
 
 FInd Loop in linked list (traverse till fast==slow) 
-Leetcode #141 | Solution https://leetcode.com/problems/linked-list-cycle/description/
+Leetcode #141 
+Solution https://leetcode.com/problems/linked-list-cycle/description/
 
 **Two pointers at a distance**
 Fins Kth node from last (move fast till K and then when fats reaches end ,kth node is slow pointer ) 
 Leetcode #19 https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/ 
 
 Reverse Linked list (prev , curr, next pointer) 
+
 Leetcode #206 : https://leetcode.com/problems/reverse-linked-list/description/
 
 **Dummy node **
