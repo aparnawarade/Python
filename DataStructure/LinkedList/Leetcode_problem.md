@@ -62,5 +62,11 @@ Linked List: 3 -> 2 -> 1 -> 8 -> 5 -> 10
 
 **Remove Nth Node From End of List Leetcode #19 | Solution**
 Hint: Use a dummy node to avoid handling the case of removing the head of the linked list as a special case.
+https://www.leetcode.com/problems/remove-nth-node-from-end-of-list
+
 **Remove Duplicates (Leetcode #83 )
+https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
+
 Reverse Sublist ( Leetcode 92)**
+https://leetcode.com/problems/reverse-linked-list-ii/description/
+
