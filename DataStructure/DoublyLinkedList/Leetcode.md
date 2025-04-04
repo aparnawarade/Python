@@ -10,22 +10,6 @@ Do not change the value of any of the nodes.
 Once you've done this for all nodes, you'll also need to update the head and tail pointers to reflect the new order of the nodes.
 
 
-Pseudo code for the reverse method:
-
-Set current_node to head
-
-While current_node is not None:
-
-Set a temporary variable, temp_next, to current_node.next
-
-Set current_node.next to current_node.prev
-
-Set current_node.prev to temp_next
-
-Set current_node to temp_next (which is actually the previous node after swapping)
-
-Swap head and tail pointers of the DoublyLinkedList
-
 
 def reverse(self):
         curr=self.head
@@ -37,6 +21,35 @@ def reverse(self):
             curr=after
         
         self.head,self.tail=self.tail,self.head
+
+swapping pairs 
+ def swap_pairs(self):
+        dummy_node = Node(0)
+        dummy_node.next = self.head
+        previous_node = dummy_node
+    
+        while self.head and self.head.next:
+            first_node = self.head
+            second_node = self.head.next
+    
+            previous_node.next = second_node
+            first_node.next = second_node.next
+            second_node.next = first_node
+    
+            second_node.prev = previous_node
+            first_node.prev = second_node
+    
+            if first_node.next:
+                first_node.next.prev = first_node
+    
+            self.head = first_node.next
+            previous_node = first_node
+    
+        self.head = dummy_node.next
+    
+        if self.head:
+            self.head.prev = None
+            
 
 is is_palindrome 
 
